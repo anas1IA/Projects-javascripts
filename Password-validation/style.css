@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display-swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4285F4;
+}
+
+.wrapper {
+    background: #fff;
+    width: 450px;
+    padding: 28px;
+    border-radius: 7px;
+}
+
+.wrapper .pass-field {
+    height: 65px;
+    width: 100%;
+    position: relative;
+}
+
+.pass-field input {
+    height: 70px;
+    width: 90%;
+    padding: 0 17px;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
