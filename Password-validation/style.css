@@ -72,11 +72,15 @@
         width: 20px;
     }
     
-    .requirement-list li.valid {
-        font-size: 0.6rem;
-        color: #aaa;
+    .requirement-list li.valid i {
+        font-size: 1.2rem;
+        color: #4285F4;
     }
     
     .requirement-list li span {
         margin-left: 12px;
+    }
+    
+    .requirement-list li.valid span {
+        color: #999;
     }
