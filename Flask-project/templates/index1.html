@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+  <br>
+  <div id="data-container"></div>
+  <button type="submit" onclick="getJson()">get Json</button>
+
+  <script>
+    const div = document.querySelector("#data-container");
+    function getJson() {
+        fetch('/getdata')
+        .then(response => response.json())
+        .then(data => data.tasks)
+        .then( tasks => {
+            console.log( tasks)
+            //div.textContent = JSON.stringify( task_data);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+    }
+
+
+  </script>
+</body>
+
+</html>
